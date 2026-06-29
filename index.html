@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= Loader ================= -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <h2>Loading Gallery...</h2>
+    </div>
+
+    <!-- ================= Navbar ================= -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-camera-retro"></i>
+                <span>Image Gallery</span>
+            </div>
+            <div class="nav-right">
+                <button id="themeBtn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= Hero ================= -->
+    <section class="hero">
+        <h1>Explore Beautiful Images</h1>
+        <p>
+            Search, Filter, View and Download High Quality Images
+        </p>
+    </section>
+
+    <!-- ================= Search ================= -->
+    <section class="search-section">
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search images..."
+            >
+        </div>
+    </section>
+
+    <!-- ================= Filter Buttons ================= -->
+    <section class="filters">
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+        <button class="filter-btn" data-filter="nature">
+            Nature
+        </button>
+        <button class="filter-btn" data-filter="city">
+            City
+        </button>
+        <button class="filter-btn" data-filter="animals">
+            Animals
+        </button>
+        <button class="filter-btn" data-filter="flowers">
+            Flowers
+        </button>
+        <button class="filter-btn" data-filter="beach">
+            Beach
+        </button>
+    </section>
+
+    <!-- ================= Counter ================= -->
+    <section class="counter">
+        Showing
+        <span id="imageCount">
+            0
+        </span>
+        Images
+    </section>
+
+    <!-- ================= Gallery ================= -->
+    <section class="gallery" id="gallery">
+        <!-- Images generated using JavaScript -->
+    </section>
+
+    <!-- ================= Lightbox ================= -->
+    <div class="lightbox" id="lightbox">
+        <span class="close">
+            &times;
+        </span>
+        <button class="prev">
+            ❮
+        </button>
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Gallery Image"
+        >
+        <button class="next">
+            ❯
+        </button>
+        <div class="lightbox-actions">
+            <a id="downloadBtn">
+                <i class="fa-solid fa-download"></i>
+                Download
+            </a>
+            <button id="favoriteBtn">
+                <i class="fa-solid fa-heart"></i>
+                Favorite
+            </button>
+        </div>
+    </div>
+    <!-- ================= Scroll To Top ================= -->
+    <button id="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ================= Footer ================= -->
+    <footer>
+        <h3>
+            Responsive Image Gallery
+        </h3>
+        <p>
+            Developed using HTML, CSS & JavaScript
+        </p>
+        <div class="social-icons">
+            <a href="https://github.com/baliyananmol166-maker/CodeAlpha_Image_Gallery.git">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="www.linkedin.com/in/anshika-raghuvanshi-a46a89381">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p class="copyright">
+            © 2026 All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
